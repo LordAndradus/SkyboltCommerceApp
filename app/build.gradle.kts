@@ -1,5 +1,7 @@
 plugins {
     id("com.android.application")
+    id("kotlin-kapt")
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -39,4 +41,32 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    //Loading button
+    implementation("com.github.leandroborgesferreira:loading-button-android:2.3.0")
+
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+
+    //Circular images
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    //View page Indicator
+    implementation("io.github.vejei.viewpagerindicator:viewpagerindicator:1.0.0-alpha.1")
+
+    //View Pager Indicator backup
+    implementation("com.github.vivchar:ViewPagerIndicator:1.1.3")
+
+    //Step Viewer
+    implementation("com.github.shuhart:stepview:1.5.1")
+
+    //Android Ktx
+    implementation("androidx.navigation:navigation-fragment-ktx:2.8.3")
+
+    //Dagger hilt
+    implementation("com.google.dagger:hilt-android:2.38.1")
+    kapt("com.google.dagger.hilt:hilt-compiler:2.38.1")
+
+    //Firebase
+    implementation("com.google.firebase:firebase-auth:23.1.0")
 }
