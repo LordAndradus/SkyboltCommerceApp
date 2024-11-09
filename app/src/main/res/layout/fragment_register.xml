@@ -69,7 +69,7 @@
         />
 
     <EditText
-        android:id="@+id/FirstNameEnter"
+        android:id="@+id/EnterFirstName"
         android:layout_width="0dp"
         android:layout_height="@dimen/RegisterInputHeight"
         style="@style/editText"
@@ -82,11 +82,11 @@
         />
 
     <EditText
-        android:id="@+id/LastNameEnter"
+        android:id="@+id/EnterLastName"
         android:layout_width="0dp"
         android:layout_height="@dimen/RegisterInputHeight"
         style="@style/editText"
-        app:layout_constraintTop_toBottomOf="@id/FirstNameEnter"
+        app:layout_constraintTop_toBottomOf="@id/EnterFirstName"
         app:layout_constraintStart_toStartOf="@id/LeftGuideline"
         app:layout_constraintEnd_toEndOf="@id/RightGuideline"
         android:hint="Last Name"
@@ -95,11 +95,11 @@
         />
 
     <EditText
-        android:id="@+id/EnterEmailHere"
+        android:id="@+id/EnterEmail"
         android:layout_width="0dp"
         android:layout_height="@dimen/RegisterInputHeight"
         style="@style/editText"
-        app:layout_constraintTop_toBottomOf="@id/LastNameEnter"
+        app:layout_constraintTop_toBottomOf="@id/EnterLastName"
         app:layout_constraintStart_toStartOf="@id/LeftGuideline"
         app:layout_constraintEnd_toEndOf="@id/RightGuideline"
         android:hint="Email"
@@ -108,11 +108,11 @@
         />
 
     <EditText
-        android:id="@+id/EnterPasswordHere"
+        android:id="@+id/EnterPassword"
         android:layout_width="0dp"
         android:layout_height="@dimen/RegisterInputHeight"
         style="@style/editText"
-        app:layout_constraintTop_toBottomOf="@id/EnterEmailHere"
+        app:layout_constraintTop_toBottomOf="@id/EnterEmail"
         app:layout_constraintStart_toStartOf="@id/LeftGuideline"
         app:layout_constraintEnd_toEndOf="@id/RightGuideline"
         android:hint="Password"
@@ -120,12 +120,12 @@
         android:layout_marginTop="15dp"
         />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
         android:id="@+id/RegisterAccountNow"
         android:layout_width="0dp"
         android:layout_height="@dimen/smallButtonHeight"
         style="@style/blueButtonStyle"
-        app:layout_constraintTop_toBottomOf="@id/EnterPasswordHere"
+        app:layout_constraintTop_toBottomOf="@id/EnterPassword"
         app:layout_constraintStart_toStartOf="@id/LeftGuideline"
         app:layout_constraintEnd_toEndOf="@id/RightGuideline"
         android:text="register"

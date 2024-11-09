@@ -1,12 +1,14 @@
 package edu.utsa.cs3443.skyboltcommerceapp.Activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import dagger.hilt.android.AndroidEntryPoint;
 import edu.utsa.cs3443.skyboltcommerceapp.R;
 
+@AndroidEntryPoint
 public class LoginRegisterActivity extends AppCompatActivity
 {
     @Override
